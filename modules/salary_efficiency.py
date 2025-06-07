@@ -131,7 +131,7 @@ def create_sample_salary_data_with_games(player_df):
     salary_df = pd.DataFrame(sample_data)
     
     # 元のプレイヤーデータとマージ
-    merged_df = player_df.merge(salary_df[['Player', 'Games_Played', 'Minutes_Per_Game', 'current_salary']], 
+    merged_df = player_df.merge(salary_df[['Player', 'current_salary']], 
                                on='Player', how='inner')
     merged_df['Salary'] = merged_df['current_salary']
     
@@ -145,7 +145,7 @@ def apply_game_based_filters(merged_df):
     
     with col1:
         # 最低ゲーム数でフィルタリング
-        if 'Games_Played' in merged_df.columns:
+        if 'G' in merged_df.columns:
             min_games = st.slider(
                 "最低ゲーム数", 
                 min_value=10, 
@@ -153,10 +153,11 @@ def apply_game_based_filters(merged_df):
                 value=25,
                 help="指定したゲーム数以上プレイしたプレイヤーのみを表示"
             )
-            merged_df = merged_df[merged_df['Games_Played'] >= min_games]
+            merged_df['G_numeric'] = pd.to_numeric(merged_df['G'], errors='coerce').fillna(0)
+            merged_df = merged_df[merged_df['G_numeric'] >= min_games]
             st.write(f"ゲーム数フィルタ後: {len(merged_df)} プレイヤー")
         else:
-            # Games_Playedがない場合はMPベースでフィルタリング
+            # Gカラムがない場合はMPベースでフィルタリング
             if 'MP' in merged_df.columns:
                 min_minutes = st.slider("最低出場時間 (分/試合)", 5, 35, 15)
                 merged_df['MP_numeric'] = pd.to_numeric(merged_df['MP'], errors='coerce').fillna(0)
@@ -247,12 +248,12 @@ def display_ranking_table_with_games(merged_df, selected_metric, efficiency_col,
     ranking_data = []
     for i, (_, player) in enumerate(top_players.iterrows(), 1):
         # ゲーム数の安全な取得
-        games_played = player.get('Games_Played', 'N/A')
+        games_played = player.get('G', 'N/A')
         if games_played != 'N/A':
-            games_played = int(games_played)
+            games_played = int(games_played) if pd.notna(games_played) else 'N/A'
         
         # 出場時間の安全な取得
-        mp_per_game = player.get('Minutes_Per_Game', player.get('MP', 0))
+        mp_per_game = player.get('MP', 0)
         mp_per_game = pd.to_numeric(mp_per_game, errors='coerce')
         mp_per_game = mp_per_game if not pd.isna(mp_per_game) else 0
         
@@ -262,7 +263,7 @@ def display_ranking_table_with_games(merged_df, selected_metric, efficiency_col,
         ranking_data.append({
             'Rank': i,
             'Player': player['Player'],
-            'Team': player.get('Tm', 'N/A'),
+            'Team': player.get('Team', 'N/A'),
             'Games': games_played,
             'Min/Game': round(mp_per_game, 1),
             selected_metric: round(metric_value, 3),
@@ -309,7 +310,7 @@ def create_visualizations_with_games(merged_df, selected_metric, efficiency_col)
             labels={efficiency_col: f'{selected_metric} per Million Dollar'},
             color=efficiency_col,
             color_continuous_scale='Viridis',
-            hover_data=['Games_Played'] if 'Games_Played' in chart_data.columns else None
+            hover_data=['G'] if 'G' in chart_data.columns else None
         )
         fig1.update_layout(height=500, yaxis={'categoryorder':'total ascending'})
         safe_plotly_chart(fig1)
@@ -318,8 +319,8 @@ def create_visualizations_with_games(merged_df, selected_metric, efficiency_col)
         st.write("**効率 vs ゲーム数関係**")
         
         # ゲーム数がある場合はゲーム数を、ない場合はサラリーを使用
-        if 'Games_Played' in merged_df.columns:
-            x_axis = 'Games_Played'
+        if 'G' in merged_df.columns:
+            x_axis = 'G'
             x_label = 'Games Played'
             title = f'{selected_metric} vs Games Played'
         else:
@@ -331,7 +332,7 @@ def create_visualizations_with_games(merged_df, selected_metric, efficiency_col)
             merged_df,
             x=x_axis,
             y=selected_metric,
-            hover_data=['Player', 'Tm'] if 'Tm' in merged_df.columns else ['Player'],
+            hover_data=['Player', 'Team'] if 'Team' in merged_df.columns else ['Player'],
             title=title,
             labels={
                 x_axis: x_label,
@@ -363,8 +364,8 @@ def display_summary_and_insights_with_games(merged_df, selected_metric, efficien
         st.metric("平均サラリー", format_currency(avg_salary))
     
     with col3:
-        if 'Games_Played' in merged_df.columns:
-            avg_games = merged_df['Games_Played'].mean()
+        if 'G' in merged_df.columns:
+            avg_games = pd.to_numeric(merged_df['G'], errors='coerce').mean()
             st.metric("平均ゲーム数", f"{avg_games:.1f}")
         else:
             avg_efficiency = merged_df[efficiency_col].mean()
@@ -381,15 +382,16 @@ def display_summary_and_insights_with_games(merged_df, selected_metric, efficien
     
     with col1:
         # 多ゲーム出場プレイヤーの効率
-        if 'Games_Played' in merged_df.columns:
-            high_games_threshold = merged_df['Games_Played'].quantile(0.75)
-            high_games_players = merged_df[merged_df['Games_Played'] >= high_games_threshold]
+        if 'G' in merged_df.columns:
+            merged_df['G_numeric'] = pd.to_numeric(merged_df['G'], errors='coerce').fillna(0)
+            high_games_threshold = merged_df['G_numeric'].quantile(0.75)
+            high_games_players = merged_df[merged_df['G_numeric'] >= high_games_threshold]
             
             if not high_games_players.empty:
                 best_durable = high_games_players.loc[high_games_players[efficiency_col].idxmax()]
                 st.success(
                     f"🏃 **耐久性+効率MVP**: {best_durable['Player']}\n\n"
-                    f"ゲーム数: {int(best_durable['Games_Played'])} | "
+                    f"ゲーム数: {int(best_durable['G_numeric'])} | "
                     f"効率: {best_durable[efficiency_col]:.6f}"
                 )
         else:
@@ -412,7 +414,7 @@ def display_summary_and_insights_with_games(merged_df, selected_metric, efficien
         
         if not expensive_players.empty:
             best_expensive = expensive_players.loc[expensive_players[efficiency_col].idxmax()]
-            games_info = f" | {int(best_expensive.get('Games_Played', 0))}試合" if 'Games_Played' in merged_df.columns else ""
+            games_info = f" | {int(pd.to_numeric(best_expensive.get('G', 0), errors='coerce'))}試合" if 'G' in merged_df.columns else ""
             st.info(
                 f"💰 **高額契約で最も効率的**: {best_expensive['Player']}\n\n"
                 f"サラリー: ${best_expensive['Salary']/1000000:.1f}M{games_info} | "
