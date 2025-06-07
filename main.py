@@ -33,7 +33,7 @@ page_names = [
 
 for page_name in page_names:
     try:
-        module = __import__(f'pages.{page_name}', fromlist=[page_name])
+        module = __import__(f'modules.{page_name}', fromlist=[page_name])
         page_modules[page_name] = module
     except ImportError as e:
         st.warning(f"ページ '{page_name}' のインポートに失敗しました: {e}")
