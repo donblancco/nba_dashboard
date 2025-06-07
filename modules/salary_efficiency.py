@@ -5,7 +5,7 @@ import plotly.express as px
 from config import PLOTLY_AVAILABLE, safe_plotly_chart, format_currency
 
 def create_page(data):
-    """サラリー効率分析ページ（マージ機能強化版）"""
+    """サラリー効率分析ページ（ゲーム数フィルタリング対応版）"""
     st.header("💰 Player Salary Efficiency Analysis")
     
     if 'advanced' not in data or data['advanced'].empty:
@@ -29,8 +29,8 @@ def create_page(data):
         st.error("❌ データの処理に失敗しました")
         return
     
-    # フィルタリング
-    merged_df = apply_filters(merged_df)
+    # フィルタリング（ゲーム数対応）
+    merged_df = apply_game_based_filters(merged_df)
     
     if merged_df.empty:
         st.error("❌ フィルタリング後にデータがありません")
@@ -77,202 +77,34 @@ def process_salary_data_enhanced(data, player_df):
     # サンプルデータを使用（実際のデータがマージできない場合）
     if not use_real_salary or merged_df.empty:
         st.info("🧪 サンプルサラリーデータを作成中...")
-        merged_df = create_sample_salary_data(player_df)
+        merged_df = create_sample_salary_data_with_games(player_df)
     
     return merged_df
 
-def identify_player_column(salary_df):
-    """プレイヤー名カラムを特定"""
-    possible_names = ['player_name', 'Player', 'name', 'player', 'NAME', 'full_name']
-    
-    for col in possible_names:
-        if col in salary_df.columns:
-            # 文字列データかチェック
-            sample_values = salary_df[col].dropna().head()
-            if len(sample_values) > 0:
-                # 数値のみでない場合（プレイヤー名の可能性が高い）
-                try:
-                    pd.to_numeric(sample_values.iloc[0])
-                    continue  # 数値の場合はスキップ
-                except:
-                    return col  # 数値変換に失敗（文字列）の場合は選択
-    
-    # 見つからない場合、最初の非数値列を使用
-    for col in salary_df.columns:
-        try:
-            pd.to_numeric(salary_df[col].dropna().iloc[0])
-        except:
-            return col
-    
-    return None
-
-def identify_salary_column(salary_df):
-    """サラリーカラムを特定"""
-    possible_names = ['current_salary', 'salary', 'total_salary', '2024-25', '2025', 'amount']
-    
-    for col in possible_names:
-        if col in salary_df.columns:
-            return col
-    
-    # 見つからない場合、最も大きな数値を持つ列を探す
-    numeric_cols = salary_df.select_dtypes(include=[np.number]).columns
-    if len(numeric_cols) > 0:
-        # 平均値が最も大きい数値列をサラリー列とする
-        max_avg = 0
-        best_col = None
-        for col in numeric_cols:
-            avg_val = salary_df[col].mean()
-            if avg_val > max_avg:
-                max_avg = avg_val
-                best_col = col
-        return best_col
-    
-    return None
-
-def attempt_enhanced_merge(player_df, salary_df, salary_player_col, salary_col):
-    """強化されたマージ処理"""
-    
-    # データクリーニング
-    salary_df_clean = salary_df.copy()
-    player_df_clean = player_df.copy()
-    
-    # プレイヤー名の正規化
-    if salary_player_col in salary_df_clean.columns:
-        salary_df_clean[salary_player_col] = salary_df_clean[salary_player_col].astype(str).str.strip()
-    
-    player_df_clean['Player'] = player_df_clean['Player'].astype(str).str.strip()
-    
-    # サラリー値の正規化
-    salary_df_clean[salary_col] = pd.to_numeric(salary_df_clean[salary_col], errors='coerce')
-    
-    # 完全一致を試行
-    merged_df = player_df_clean.merge(
-        salary_df_clean[[salary_player_col, salary_col]], 
-        left_on='Player', 
-        right_on=salary_player_col, 
-        how='inner'
-    )
-    
-    if not merged_df.empty:
-        merged_df['Salary'] = merged_df[salary_col]
-        merged_df = merged_df[merged_df['Salary'].notna() & (merged_df['Salary'] > 0)]
-        return merged_df
-    
-    # 完全一致が失敗した場合、ファジーマッチングを試行
-    st.info("🔍 完全一致に失敗。ファジーマッチングを試行中...")
-    
-    merged_df = fuzzy_match_players(player_df_clean, salary_df_clean, salary_player_col, salary_col)
-    
-    if not merged_df.empty:
-        return merged_df
-    
-    # ファジーマッチングも失敗した場合、名前の一部マッチングを試行
-    st.info("🔍 ファジーマッチングに失敗。部分マッチングを試行中...")
-    
-    merged_df = partial_match_players(player_df_clean, salary_df_clean, salary_player_col, salary_col)
-    
-    return merged_df
-
-def fuzzy_match_players(player_df, salary_df, salary_player_col, salary_col):
-    """ファジーマッチング（類似度ベース）"""
-    from difflib import SequenceMatcher
-    
-    matched_data = []
-    stats_players = player_df['Player'].unique()
-    salary_players = salary_df[salary_player_col].dropna().unique()
-    
-    for stats_name in stats_players:
-        best_match = None
-        best_score = 0
-        
-        for salary_name in salary_players:
-            # 文字列の類似度を計算
-            similarity = SequenceMatcher(None, 
-                                       stats_name.lower().replace('.', ''), 
-                                       str(salary_name).lower().replace('.', '')).ratio()
-            
-            if similarity > best_score and similarity >= 0.8:  # 80%以上の類似度
-                best_score = similarity
-                best_match = salary_name
-        
-        if best_match:
-            # マッチした場合、データを追加
-            player_stats = player_df[player_df['Player'] == stats_name].iloc[0]
-            salary_info = salary_df[salary_df[salary_player_col] == best_match].iloc[0]
-            
-            matched_data.append({
-                **player_stats.to_dict(),
-                'Salary': salary_info[salary_col],
-                'matched_salary_name': best_match,
-                'match_score': best_score
-            })
-    
-    if matched_data:
-        merged_df = pd.DataFrame(matched_data)
-        merged_df = merged_df[merged_df['Salary'].notna() & (merged_df['Salary'] > 0)]
-        st.success(f"✅ ファジーマッチングで {len(merged_df)} プレイヤーをマッチング")
-        return merged_df
-    
-    return pd.DataFrame()
-
-def partial_match_players(player_df, salary_df, salary_player_col, salary_col):
-    """部分マッチング（姓または名での一致）"""
-    matched_data = []
-    stats_players = player_df['Player'].unique()
-    salary_players = salary_df[salary_player_col].dropna().unique()
-    
-    for stats_name in stats_players:
-        # 名前を分割（姓と名）
-        stats_parts = stats_name.split()
-        
-        for salary_name in salary_players:
-            salary_parts = str(salary_name).split()
-            
-            # 姓または名が一致する場合
-            if len(stats_parts) >= 2 and len(salary_parts) >= 2:
-                if (stats_parts[-1].lower() == salary_parts[-1].lower() or  # 姓の一致
-                    stats_parts[0].lower() == salary_parts[0].lower()):    # 名の一致
-                    
-                    # マッチした場合、データを追加
-                    player_stats = player_df[player_df['Player'] == stats_name].iloc[0]
-                    salary_info = salary_df[salary_df[salary_player_col] == salary_name].iloc[0]
-                    
-                    matched_data.append({
-                        **player_stats.to_dict(),
-                        'Salary': salary_info[salary_col],
-                        'matched_salary_name': salary_name,
-                        'match_type': 'partial'
-                    })
-                    break  # 最初のマッチで終了
-    
-    if matched_data:
-        merged_df = pd.DataFrame(matched_data)
-        merged_df = merged_df[merged_df['Salary'].notna() & (merged_df['Salary'] > 0)]
-        st.success(f"✅ 部分マッチングで {len(merged_df)} プレイヤーをマッチング")
-        return merged_df
-    
-    return pd.DataFrame()
-
-def create_sample_salary_data(player_df):
-    """サンプルサラリーデータの作成"""
+def create_sample_salary_data_with_games(player_df):
+    """ゲーム数を含むサンプルサラリーデータの作成"""
     np.random.seed(42)
     players = player_df['Player'].unique()
     
-    sample_salaries = []
+    sample_data = []
     for player in players:
         player_stats = player_df[player_df['Player'] == player].iloc[0]
         
-        # ベースサラリー
-        base_salary = 2000000
+        # ゲーム数の生成（現実的な範囲）
+        games_played = np.random.randint(20, 82)  # NBAは最大82ゲーム
         
-        # パフォーマンスボーナス
+        # 出場時間の生成（ゲーム数に基づく）
+        minutes_per_game = np.random.uniform(15, 40)
+        total_minutes = games_played * minutes_per_game
+        
+        # パフォーマンス指標
         per_value = pd.to_numeric(player_stats.get('PER', 15), errors='coerce')
         per_value = per_value if not pd.isna(per_value) else 15
-        per_bonus = per_value * 500000
         
-        mp_value = pd.to_numeric(player_stats.get('MP', 20), errors='coerce')
-        mp_value = mp_value if not pd.isna(mp_value) else 20
-        mp_bonus = mp_value * 200000
+        # サラリー計算（ゲーム数とパフォーマンスに基づく）
+        base_salary = 2000000
+        game_bonus = games_played * 50000  # ゲーム出場ボーナス
+        performance_bonus = per_value * 400000
         
         # スター選手ボーナス
         star_bonus = 0
@@ -282,35 +114,57 @@ def create_sample_salary_data(player_df):
             star_bonus = np.random.uniform(10000000, 20000000)
         
         # 最終サラリー
-        salary = base_salary + per_bonus + mp_bonus + star_bonus + np.random.uniform(-2000000, 5000000)
+        salary = base_salary + game_bonus + performance_bonus + star_bonus + np.random.uniform(-2000000, 5000000)
         salary = max(salary, 1000000)  # 最低保証
         salary = min(salary, 60000000)  # 上限
         
-        sample_salaries.append(int(salary))
+        sample_data.append({
+            'Player': player,
+            'Games_Played': games_played,
+            'Minutes_Per_Game': round(minutes_per_game, 1),
+            'Total_Minutes': round(total_minutes, 0),
+            'current_salary': int(salary),
+            'PER': per_value,
+            'Tm': player_stats.get('Tm', 'N/A')
+        })
     
-    salary_df = pd.DataFrame({
-        'Player': players,
-        'current_salary': sample_salaries
-    })
+    salary_df = pd.DataFrame(sample_data)
     
-    merged_df = player_df.merge(salary_df, on='Player', how='inner')
+    # 元のプレイヤーデータとマージ
+    merged_df = player_df.merge(salary_df[['Player', 'Games_Played', 'Minutes_Per_Game', 'current_salary']], 
+                               on='Player', how='inner')
     merged_df['Salary'] = merged_df['current_salary']
-    st.success(f"✅ {len(merged_df)} プレイヤーのサンプルデータを作成しました")
+    
+    st.success(f"✅ {len(merged_df)} プレイヤーのサンプルデータを作成しました（ゲーム数含む）")
     return merged_df
 
-def apply_filters(merged_df):
-    """フィルタリングの適用"""
+def apply_game_based_filters(merged_df):
+    """ゲーム数ベースのフィルタリングの適用"""
     st.subheader("🔧 フィルタリングオプション")
     col1, col2 = st.columns(2)
     
     with col1:
-        if 'MP' in merged_df.columns:
-            min_minutes = st.slider("最低出場時間 (分/試合)", 5, 35, 15)
-            merged_df['MP_numeric'] = pd.to_numeric(merged_df['MP'], errors='coerce').fillna(0)
-            merged_df = merged_df[merged_df['MP_numeric'] >= min_minutes]
-            st.write(f"出場時間フィルタ後: {len(merged_df)} プレイヤー")
+        # 最低ゲーム数でフィルタリング
+        if 'Games_Played' in merged_df.columns:
+            min_games = st.slider(
+                "最低ゲーム数", 
+                min_value=10, 
+                max_value=82, 
+                value=25,
+                help="指定したゲーム数以上プレイしたプレイヤーのみを表示"
+            )
+            merged_df = merged_df[merged_df['Games_Played'] >= min_games]
+            st.write(f"ゲーム数フィルタ後: {len(merged_df)} プレイヤー")
+        else:
+            # Games_Playedがない場合はMPベースでフィルタリング
+            if 'MP' in merged_df.columns:
+                min_minutes = st.slider("最低出場時間 (分/試合)", 5, 35, 15)
+                merged_df['MP_numeric'] = pd.to_numeric(merged_df['MP'], errors='coerce').fillna(0)
+                merged_df = merged_df[merged_df['MP_numeric'] >= min_minutes]
+                st.write(f"出場時間フィルタ後: {len(merged_df)} プレイヤー")
     
     with col2:
+        # サラリー範囲でフィルタリング
         if len(merged_df) > 0:
             min_salary = int(merged_df['Salary'].min())
             max_salary = int(merged_df['Salary'].max())
@@ -319,7 +173,8 @@ def apply_filters(merged_df):
                     "サラリー範囲 (Million Dollar)",
                     min_value=min_salary//1000000,
                     max_value=max_salary//1000000,
-                    value=(min_salary//1000000, max_salary//1000000)
+                    value=(min_salary//1000000, max_salary//1000000),
+                    help="指定したサラリー範囲内のプレイヤーのみを表示"
                 )
                 merged_df = merged_df[
                     (merged_df['Salary'] >= salary_range[0] * 1000000) &
@@ -374,59 +229,69 @@ def create_efficiency_analysis(merged_df):
         return
     
     # ランキング表示
-    display_ranking_table(merged_df, selected_metric, efficiency_col, display_count)
+    display_ranking_table_with_games(merged_df, selected_metric, efficiency_col, display_count)
     
     # 可視化
     if PLOTLY_AVAILABLE:
-        create_visualizations(merged_df, selected_metric, efficiency_col)
+        create_visualizations_with_games(merged_df, selected_metric, efficiency_col)
     
     # サマリーとインサイト
-    display_summary_and_insights(merged_df, selected_metric, efficiency_col)
+    display_summary_and_insights_with_games(merged_df, selected_metric, efficiency_col)
 
-def get_available_metrics(merged_df):
-    """利用可能な効率指標を取得"""
-    available_metrics = []
-    for metric in ['PER', 'VORP', 'WS', 'BPM', 'TS%', 'USG%']:
-        if metric in merged_df.columns:
-            metric_values = pd.to_numeric(merged_df[metric], errors='coerce')
-            if not metric_values.isna().all() and metric_values.sum() != 0:
-                available_metrics.append(metric)
-    return available_metrics
-
-def display_ranking_table(merged_df, selected_metric, efficiency_col, display_count):
-    """ランキングテーブルの表示"""
+def display_ranking_table_with_games(merged_df, selected_metric, efficiency_col, display_count):
+    """ゲーム数を含むランキングテーブルの表示"""
     top_players = merged_df.nlargest(display_count, efficiency_col)
     
     st.subheader(f"🏆 Top {display_count} プレイヤー効率ランキング")
     
     ranking_data = []
     for i, (_, player) in enumerate(top_players.iterrows(), 1):
+        # ゲーム数の安全な取得
+        games_played = player.get('Games_Played', 'N/A')
+        if games_played != 'N/A':
+            games_played = int(games_played)
+        
+        # 出場時間の安全な取得
+        mp_per_game = player.get('Minutes_Per_Game', player.get('MP', 0))
+        mp_per_game = pd.to_numeric(mp_per_game, errors='coerce')
+        mp_per_game = mp_per_game if not pd.isna(mp_per_game) else 0
+        
+        metric_value = pd.to_numeric(player[selected_metric], errors='coerce')
+        metric_value = metric_value if not pd.isna(metric_value) else 0
+        
         ranking_data.append({
             'Rank': i,
             'Player': player['Player'],
             'Team': player.get('Tm', 'N/A'),
-            'Minutes': round(pd.to_numeric(player.get('MP', 0), errors='coerce'), 1),
-            selected_metric: round(pd.to_numeric(player[selected_metric], errors='coerce'), 3),
+            'Games': games_played,
+            'Min/Game': round(mp_per_game, 1),
+            selected_metric: round(metric_value, 3),
             'Salary (M)': round(player['Salary'] / 1000000, 2),
             'Efficiency': round(player[efficiency_col], 8)
         })
     
     ranking_df = pd.DataFrame(ranking_data)
     
+    # 美しいテーブル表示
     st.dataframe(
         ranking_df.style
         .format({
             'Efficiency': '{:.8f}',
             'Salary (M)': '${:.2f}M',
-            'Minutes': '{:.1f}'
+            'Min/Game': '{:.1f}',
+            selected_metric: '{:.3f}'
         })
         .background_gradient(subset=['Efficiency'], cmap='RdYlGn')
-        .highlight_max(subset=['Efficiency'], color='lightgreen'),
+        .highlight_max(subset=['Efficiency'], color='lightgreen')
+        .set_properties(**{
+            'text-align': 'center',
+            'font-size': '12px'
+        }),
         use_container_width=True
     )
 
-def create_visualizations(merged_df, selected_metric, efficiency_col):
-    """可視化の作成"""
+def create_visualizations_with_games(merged_df, selected_metric, efficiency_col):
+    """ゲーム数を考慮した可視化の作成"""
     st.subheader("📊 可視化分析")
     
     col1, col2 = st.columns(2)
@@ -443,27 +308,49 @@ def create_visualizations(merged_df, selected_metric, efficiency_col):
             title=f'Top 10 - {selected_metric} per Million Dollar',
             labels={efficiency_col: f'{selected_metric} per Million Dollar'},
             color=efficiency_col,
-            color_continuous_scale='Viridis'
+            color_continuous_scale='Viridis',
+            hover_data=['Games_Played'] if 'Games_Played' in chart_data.columns else None
         )
         fig1.update_layout(height=500, yaxis={'categoryorder':'total ascending'})
         safe_plotly_chart(fig1)
     
     with col2:
-        st.write("**効率 vs サラリー関係**")
+        st.write("**効率 vs ゲーム数関係**")
+        
+        # ゲーム数がある場合はゲーム数を、ない場合はサラリーを使用
+        if 'Games_Played' in merged_df.columns:
+            x_axis = 'Games_Played'
+            x_label = 'Games Played'
+            title = f'{selected_metric} vs Games Played'
+        else:
+            x_axis = 'Salary'
+            x_label = 'Salary (Dollar)'
+            title = f'{selected_metric} vs Salary'
         
         fig2 = px.scatter(
             merged_df,
-            x='Salary',
+            x=x_axis,
             y=selected_metric,
             hover_data=['Player', 'Tm'] if 'Tm' in merged_df.columns else ['Player'],
-            title=f'{selected_metric} vs Salary',
-            labels={'Salary': 'Salary (Dollar)', selected_metric: selected_metric}
+            title=title,
+            labels={
+                x_axis: x_label,
+                selected_metric: selected_metric
+            },
+            color=efficiency_col,
+            color_continuous_scale='Viridis',
+            size='Salary',
+            size_max=15
         )
-        fig2.update_layout(height=500, xaxis_tickformat='$,.0f')
+        
+        fig2.update_layout(height=500)
+        if x_axis == 'Salary':
+            fig2.update_layout(xaxis_tickformat='$,.0f')
+        
         safe_plotly_chart(fig2)
 
-def display_summary_and_insights(merged_df, selected_metric, efficiency_col):
-    """サマリーとインサイトの表示"""
+def display_summary_and_insights_with_games(merged_df, selected_metric, efficiency_col):
+    """ゲーム数を含むサマリーとインサイトの表示"""
     st.subheader("📈 サマリー統計")
     
     col1, col2, col3, col4 = st.columns(4)
@@ -476,9 +363,137 @@ def display_summary_and_insights(merged_df, selected_metric, efficiency_col):
         st.metric("平均サラリー", format_currency(avg_salary))
     
     with col3:
-        avg_efficiency = merged_df[efficiency_col].mean()
-        st.metric(f"平均{selected_metric}効率", f"{avg_efficiency:.6f}")
+        if 'Games_Played' in merged_df.columns:
+            avg_games = merged_df['Games_Played'].mean()
+            st.metric("平均ゲーム数", f"{avg_games:.1f}")
+        else:
+            avg_efficiency = merged_df[efficiency_col].mean()
+            st.metric(f"平均{selected_metric}効率", f"{avg_efficiency:.6f}")
     
     with col4:
         best_player = merged_df.loc[merged_df[efficiency_col].idxmax(), 'Player']
         st.metric("最高効率プレイヤー", best_player)
+    
+    # インサイト
+    st.subheader("💡 注目ポイント")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # 多ゲーム出場プレイヤーの効率
+        if 'Games_Played' in merged_df.columns:
+            high_games_threshold = merged_df['Games_Played'].quantile(0.75)
+            high_games_players = merged_df[merged_df['Games_Played'] >= high_games_threshold]
+            
+            if not high_games_players.empty:
+                best_durable = high_games_players.loc[high_games_players[efficiency_col].idxmax()]
+                st.success(
+                    f"🏃 **耐久性+効率MVP**: {best_durable['Player']}\n\n"
+                    f"ゲーム数: {int(best_durable['Games_Played'])} | "
+                    f"効率: {best_durable[efficiency_col]:.6f}"
+                )
+        else:
+            # バリュー契約プレイヤー
+            value_threshold = merged_df['Salary'].quantile(0.3)
+            value_players = merged_df[merged_df['Salary'] <= value_threshold]
+            
+            if not value_players.empty:
+                best_value = value_players.loc[value_players[efficiency_col].idxmax()]
+                st.success(
+                    f"🌟 **バリュー契約MVP**: {best_value['Player']}\n\n"
+                    f"サラリー: ${best_value['Salary']/1000000:.1f}M | "
+                    f"効率: {best_value[efficiency_col]:.6f}"
+                )
+    
+    with col2:
+        # 高額契約の効率プレイヤー
+        expensive_threshold = merged_df['Salary'].quantile(0.8)
+        expensive_players = merged_df[merged_df['Salary'] >= expensive_threshold]
+        
+        if not expensive_players.empty:
+            best_expensive = expensive_players.loc[expensive_players[efficiency_col].idxmax()]
+            games_info = f" | {int(best_expensive.get('Games_Played', 0))}試合" if 'Games_Played' in merged_df.columns else ""
+            st.info(
+                f"💰 **高額契約で最も効率的**: {best_expensive['Player']}\n\n"
+                f"サラリー: ${best_expensive['Salary']/1000000:.1f}M{games_info} | "
+                f"効率: {best_expensive[efficiency_col]:.6f}"
+            )
+
+# ヘルパー関数（変更なし）
+def identify_player_column(salary_df):
+    """プレイヤー名カラムを特定"""
+    possible_names = ['player_name', 'Player', 'name', 'player', 'NAME', 'full_name']
+    
+    for col in possible_names:
+        if col in salary_df.columns:
+            sample_values = salary_df[col].dropna().head()
+            if len(sample_values) > 0:
+                try:
+                    pd.to_numeric(sample_values.iloc[0])
+                    continue
+                except:
+                    return col
+    
+    for col in salary_df.columns:
+        try:
+            pd.to_numeric(salary_df[col].dropna().iloc[0])
+        except:
+            return col
+    
+    return None
+
+def identify_salary_column(salary_df):
+    """サラリーカラムを特定"""
+    possible_names = ['current_salary', 'salary', 'total_salary', '2024-25', '2025', 'amount']
+    
+    for col in possible_names:
+        if col in salary_df.columns:
+            return col
+    
+    numeric_cols = salary_df.select_dtypes(include=[np.number]).columns
+    if len(numeric_cols) > 0:
+        max_avg = 0
+        best_col = None
+        for col in numeric_cols:
+            avg_val = salary_df[col].mean()
+            if avg_val > max_avg:
+                max_avg = avg_val
+                best_col = col
+        return best_col
+    
+    return None
+
+def attempt_enhanced_merge(player_df, salary_df, salary_player_col, salary_col):
+    """強化されたマージ処理"""
+    salary_df_clean = salary_df.copy()
+    player_df_clean = player_df.copy()
+    
+    if salary_player_col in salary_df_clean.columns:
+        salary_df_clean[salary_player_col] = salary_df_clean[salary_player_col].astype(str).str.strip()
+    
+    player_df_clean['Player'] = player_df_clean['Player'].astype(str).str.strip()
+    salary_df_clean[salary_col] = pd.to_numeric(salary_df_clean[salary_col], errors='coerce')
+    
+    merged_df = player_df_clean.merge(
+        salary_df_clean[[salary_player_col, salary_col]], 
+        left_on='Player', 
+        right_on=salary_player_col, 
+        how='inner'
+    )
+    
+    if not merged_df.empty:
+        merged_df['Salary'] = merged_df[salary_col]
+        merged_df = merged_df[merged_df['Salary'].notna() & (merged_df['Salary'] > 0)]
+        return merged_df
+    
+    return pd.DataFrame()
+
+def get_available_metrics(merged_df):
+    """利用可能な効率指標を取得"""
+    available_metrics = []
+    for metric in ['PER', 'VORP', 'WS', 'BPM', 'TS%', 'USG%']:
+        if metric in merged_df.columns:
+            metric_values = pd.to_numeric(merged_df[metric], errors='coerce')
+            if not metric_values.isna().all() and metric_values.sum() != 0:
+                available_metrics.append(metric)
+    return available_metrics
