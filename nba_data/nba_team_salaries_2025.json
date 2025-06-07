@@ -1,0 +1,3426 @@
+[
+  {
+    "team": "AJ Griffin",
+    "total_salary": 250000,
+    "avg_salary": 250000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "AJ Johnson",
+    "total_salary": 2795294,
+    "avg_salary": 2795294.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "AJ Lawson",
+    "total_salary": 534309,
+    "avg_salary": 534309.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.5
+  },
+  {
+    "team": "Aaron Gordon",
+    "total_salary": 22841455,
+    "avg_salary": 22841455.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 22.8
+  },
+  {
+    "team": "Aaron Wiggins",
+    "total_salary": 10514017,
+    "avg_salary": 10514017.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.5
+  },
+  {
+    "team": "Ajay Mitchell",
+    "total_salary": 3347451,
+    "avg_salary": 3347451.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.3
+  },
+  {
+    "team": "Al Horford",
+    "total_salary": 9500000,
+    "avg_salary": 9500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.5
+  },
+  {
+    "team": "Alex Caruso",
+    "total_salary": 9890000,
+    "avg_salary": 9890000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.9
+  },
+  {
+    "team": "Alex Len",
+    "total_salary": 4480977,
+    "avg_salary": 4480977.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.5
+  },
+  {
+    "team": "Alex Reese",
+    "total_salary": 250312,
+    "avg_salary": 250312.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Alex Sarr",
+    "total_salary": 11245680,
+    "avg_salary": 11245680.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.2
+  },
+  {
+    "team": "Alperen Sengun",
+    "total_salary": 5424654,
+    "avg_salary": 5424654.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.4
+  },
+  {
+    "team": "Amen Thompson",
+    "total_salary": 9249748,
+    "avg_salary": 9249748.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.2
+  },
+  {
+    "team": "Amir Coffey",
+    "total_salary": 3938271,
+    "avg_salary": 3938271.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.9
+  },
+  {
+    "team": "Andre Drummond",
+    "total_salary": 5000000,
+    "avg_salary": 5000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.0
+  },
+  {
+    "team": "Andrew Nembhard",
+    "total_salary": 2019699,
+    "avg_salary": 2019699.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.0
+  },
+  {
+    "team": "Andrew Wiggins",
+    "total_salary": 26276786,
+    "avg_salary": 26276786.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 26.3
+  },
+  {
+    "team": "Anfernee Simons",
+    "total_salary": 25892857,
+    "avg_salary": 25892857.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 25.9
+  },
+  {
+    "team": "Anthony Black",
+    "total_salary": 7607754,
+    "avg_salary": 7607754.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.6
+  },
+  {
+    "team": "Anthony Davis",
+    "total_salary": 43219440,
+    "avg_salary": 43219440.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 43.2
+  },
+  {
+    "team": "Ariel Hukporti",
+    "total_salary": 1112306,
+    "avg_salary": 1112306.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.1
+  },
+  {
+    "team": "Ausar Thompson",
+    "total_salary": 8376291,
+    "avg_salary": 8376291.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.4
+  },
+  {
+    "team": "Austin Reaves",
+    "total_salary": 12976362,
+    "avg_salary": 12976362.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.0
+  },
+  {
+    "team": "Ayo Dosunmu",
+    "total_salary": 7000000,
+    "avg_salary": 7000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.0
+  },
+  {
+    "team": "BJ Boston",
+    "total_salary": 1005158,
+    "avg_salary": 1005158.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Baylor Scheierman",
+    "total_salary": 2494320,
+    "avg_salary": 2494320.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Ben Sheppard",
+    "total_salary": 2664031,
+    "avg_salary": 2664031.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.7
+  },
+  {
+    "team": "Ben Simmons",
+    "total_salary": 40338144,
+    "avg_salary": 40338144.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 40.3
+  },
+  {
+    "team": "Bennedict Mathurin",
+    "total_salary": 7245720,
+    "avg_salary": 7245720.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.2
+  },
+  {
+    "team": "Bilal Coulibaly",
+    "total_salary": 6945240,
+    "avg_salary": 6945240.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.9
+  },
+  {
+    "team": "Bismack Biyombo",
+    "total_salary": 1253154,
+    "avg_salary": 1253154.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.3
+  },
+  {
+    "team": "Blake Wesley",
+    "total_salary": 2624280,
+    "avg_salary": 2624280.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Bobby Portis",
+    "total_salary": 12578286,
+    "avg_salary": 12578286.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.6
+  },
+  {
+    "team": "Bobi Klintman",
+    "total_salary": 1157153,
+    "avg_salary": 1157153.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.2
+  },
+  {
+    "team": "Bogdan Bogdanovic",
+    "total_salary": 17260000,
+    "avg_salary": 17260000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 17.3
+  },
+  {
+    "team": "Bojan Bogdanovic",
+    "total_salary": 19032850,
+    "avg_salary": 19032850.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.0
+  },
+  {
+    "team": "Bones Hyland",
+    "total_salary": 4306427,
+    "avg_salary": 4306427.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.3
+  },
+  {
+    "team": "Boo Buie",
+    "total_salary": 143308,
+    "avg_salary": 143308.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Bradley Beal",
+    "total_salary": 50203930,
+    "avg_salary": 50203930.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 50.2
+  },
+  {
+    "team": "Branden Carlson",
+    "total_salary": 795038,
+    "avg_salary": 795038.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.8
+  },
+  {
+    "team": "Brandin Podziemski",
+    "total_salary": 3519960,
+    "avg_salary": 3519960.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.5
+  },
+  {
+    "team": "Brandon Clarke",
+    "total_salary": 12500000,
+    "avg_salary": 12500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.5
+  },
+  {
+    "team": "Brandon Miller",
+    "total_salary": 11424382,
+    "avg_salary": 11424382.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.4
+  },
+  {
+    "team": "Brandon Williams",
+    "total_salary": 598120,
+    "avg_salary": 598120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Braxton Key",
+    "total_salary": 129415,
+    "avg_salary": 129415.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Brice Sensabaugh",
+    "total_salary": 2571030,
+    "avg_salary": 2571030.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Brook Lopez",
+    "total_salary": 23000000,
+    "avg_salary": 23000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.0
+  },
+  {
+    "team": "Bruno Fernando",
+    "total_salary": 1115128,
+    "avg_salary": 1115128.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.1
+  },
+  {
+    "team": "Buddy Hield",
+    "total_salary": 8780488,
+    "avg_salary": 8780488.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.8
+  },
+  {
+    "team": "CJ McCollum",
+    "total_salary": 33333333,
+    "avg_salary": 33333333.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 33.3
+  },
+  {
+    "team": "Cade Cunningham",
+    "total_salary": 13940809,
+    "avg_salary": 13940809.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.9
+  },
+  {
+    "team": "Caleb Martin",
+    "total_salary": 9186594,
+    "avg_salary": 9186594.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.2
+  },
+  {
+    "team": "Cam Thomas",
+    "total_salary": 4041249,
+    "avg_salary": 4041249.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Cameron Johnson",
+    "total_salary": 23062500,
+    "avg_salary": 23062500.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.1
+  },
+  {
+    "team": "Cameron Payne",
+    "total_salary": 3003427,
+    "avg_salary": 3003427.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Cameron Whitmore",
+    "total_salary": 3379068,
+    "avg_salary": 3379068.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.4
+  },
+  {
+    "team": "Caris LeVert",
+    "total_salary": 16615384,
+    "avg_salary": 16615384.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 16.6
+  },
+  {
+    "team": "Carlton Carrington",
+    "total_salary": 4454880,
+    "avg_salary": 4454880.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.5
+  },
+  {
+    "team": "Cason Wallace",
+    "total_salary": 5555920,
+    "avg_salary": 5555920.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.6
+  },
+  {
+    "team": "Charlie Brown",
+    "total_salary": 2237692,
+    "avg_salary": 2237692.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Chet Holmgren",
+    "total_salary": 10880640,
+    "avg_salary": 10880640.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.9
+  },
+  {
+    "team": "Chris Boucher",
+    "total_salary": 10810000,
+    "avg_salary": 10810000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.8
+  },
+  {
+    "team": "Chris Duarte",
+    "total_salary": 5893768,
+    "avg_salary": 5893768.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.9
+  },
+  {
+    "team": "Chris Paul",
+    "total_salary": 10460000,
+    "avg_salary": 10460000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.5
+  },
+  {
+    "team": "Christian Braun",
+    "total_salary": 3089640,
+    "avg_salary": 3089640.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Christian Wood",
+    "total_salary": 3036040,
+    "avg_salary": 3036040.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Chuma Okeke",
+    "total_salary": 372949,
+    "avg_salary": 372949.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Clint Capela",
+    "total_salary": 22265280,
+    "avg_salary": 22265280.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 22.3
+  },
+  {
+    "team": "Coby White",
+    "total_salary": 12000000,
+    "avg_salary": 12000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.0
+  },
+  {
+    "team": "Cody Martin",
+    "total_salary": 8120000,
+    "avg_salary": 8120000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.1
+  },
+  {
+    "team": "Cody Williams",
+    "total_salary": 5469120,
+    "avg_salary": 5469120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.5
+  },
+  {
+    "team": "Cole Anthony",
+    "total_salary": 12900000,
+    "avg_salary": 12900000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.9
+  },
+  {
+    "team": "Cole Swider",
+    "total_salary": 472449,
+    "avg_salary": 472449.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.5
+  },
+  {
+    "team": "Colin Castleton",
+    "total_salary": 955125,
+    "avg_salary": 955125.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Collin Sexton",
+    "total_salary": 18150000,
+    "avg_salary": 18150000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 18.2
+  },
+  {
+    "team": "Corey Kispert",
+    "total_salary": 5705887,
+    "avg_salary": 5705887.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.7
+  },
+  {
+    "team": "Cui Yongxi",
+    "total_salary": 176943,
+    "avg_salary": 176943.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "D'Angelo Russell",
+    "total_salary": 18692307,
+    "avg_salary": 18692307.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 18.7
+  },
+  {
+    "team": "DJ Carton",
+    "total_salary": 289289,
+    "avg_salary": 289289.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "DJ Steward",
+    "total_salary": 215548,
+    "avg_salary": 215548.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "DaQuan Jeffries",
+    "total_salary": 2425403,
+    "avg_salary": 2425403.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.4
+  },
+  {
+    "team": "DaRon Holmes",
+    "total_salary": 3065640,
+    "avg_salary": 3065640.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Daeqwon Plowden",
+    "total_salary": 424951,
+    "avg_salary": 424951.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Daishen Nix",
+    "total_salary": 362356,
+    "avg_salary": 362356.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Dalen Terry",
+    "total_salary": 3510480,
+    "avg_salary": 3510480.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.5
+  },
+  {
+    "team": "Dalton Knecht",
+    "total_salary": 3819120,
+    "avg_salary": 3819120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.8
+  },
+  {
+    "team": "Damian Lillard",
+    "total_salary": 48787676,
+    "avg_salary": 48787676.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 48.8
+  },
+  {
+    "team": "Damion Baugh",
+    "total_salary": 196245,
+    "avg_salary": 196245.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Daniel Gafford",
+    "total_salary": 13394160,
+    "avg_salary": 13394160.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.4
+  },
+  {
+    "team": "Dante Exum",
+    "total_salary": 3150000,
+    "avg_salary": 3150000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.2
+  },
+  {
+    "team": "Dario Saric",
+    "total_salary": 5168000,
+    "avg_salary": 5168000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.2
+  },
+  {
+    "team": "Dariq Whitehead",
+    "total_salary": 3114342,
+    "avg_salary": 3114342.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Darius Garland",
+    "total_salary": 36725670,
+    "avg_salary": 36725670.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 36.7
+  },
+  {
+    "team": "David Jones",
+    "total_salary": 175480,
+    "avg_salary": 175480.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "David Roddy",
+    "total_salary": 3269623,
+    "avg_salary": 3269623.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.3
+  },
+  {
+    "team": "Davion Mitchell",
+    "total_salary": 6451077,
+    "avg_salary": 6451077.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.5
+  },
+  {
+    "team": "Davis Bertans",
+    "total_salary": 5250000,
+    "avg_salary": 5250000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.2
+  },
+  {
+    "team": "Day'Ron Sharpe",
+    "total_salary": 3989122,
+    "avg_salary": 3989122.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "De'Andre Hunter",
+    "total_salary": 21696429,
+    "avg_salary": 21696429.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 21.7
+  },
+  {
+    "team": "De'Anthony Melton",
+    "total_salary": 12822000,
+    "avg_salary": 12822000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.8
+  },
+  {
+    "team": "DeMar DeRozan",
+    "total_salary": 23400000,
+    "avg_salary": 23400000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.4
+  },
+  {
+    "team": "Dean Wade",
+    "total_salary": 6166667,
+    "avg_salary": 6166667.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.2
+  },
+  {
+    "team": "Deandre Ayton",
+    "total_salary": 34005126,
+    "avg_salary": 34005126.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 34.0
+  },
+  {
+    "team": "Dejounte Murray",
+    "total_salary": 28817135,
+    "avg_salary": 28817135.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 28.8
+  },
+  {
+    "team": "Dereck Lively",
+    "total_salary": 5014409,
+    "avg_salary": 5014409.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.0
+  },
+  {
+    "team": "Derrick Jones",
+    "total_salary": 9523810,
+    "avg_salary": 9523810.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.5
+  },
+  {
+    "team": "Derrick White",
+    "total_salary": 19821429,
+    "avg_salary": 19821429.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.8
+  },
+  {
+    "team": "Desmond Bane",
+    "total_salary": 34005250,
+    "avg_salary": 34005250.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 34.0
+  },
+  {
+    "team": "Devin Carter",
+    "total_salary": 4689000,
+    "avg_salary": 4689000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.7
+  },
+  {
+    "team": "Devin Vassell",
+    "total_salary": 29347826,
+    "avg_salary": 29347826.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 29.3
+  },
+  {
+    "team": "Devonte Graham",
+    "total_salary": 2850000,
+    "avg_salary": 2850000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "Didi Louzada",
+    "total_salary": 268032,
+    "avg_salary": 268032.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Dillon Brooks",
+    "total_salary": 23255493,
+    "avg_salary": 23255493.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.3
+  },
+  {
+    "team": "Dillon Jones",
+    "total_salary": 2622360,
+    "avg_salary": 2622360.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Domantas Sabonis",
+    "total_salary": 39200000,
+    "avg_salary": 39200000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 39.2
+  },
+  {
+    "team": "Dominick Barlow",
+    "total_salary": 922983,
+    "avg_salary": 922983.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Donovan Clingan",
+    "total_salary": 6836400,
+    "avg_salary": 6836400.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.8
+  },
+  {
+    "team": "Donovan Mitchell",
+    "total_salary": 35410310,
+    "avg_salary": 35410310.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 35.4
+  },
+  {
+    "team": "Donte DiVincenzo",
+    "total_salary": 11445000,
+    "avg_salary": 11445000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.4
+  },
+  {
+    "team": "Dorian Finney-Smith",
+    "total_salary": 14924167,
+    "avg_salary": 14924167.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 14.9
+  },
+  {
+    "team": "Draymond Green",
+    "total_salary": 24107143,
+    "avg_salary": 24107143.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 24.1
+  },
+  {
+    "team": "Drew Timme",
+    "total_salary": 113055,
+    "avg_salary": 113055.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Duane Washington Jr",
+    "total_salary": 2162607,
+    "avg_salary": 2162607.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Duncan Robinson",
+    "total_salary": 19406000,
+    "avg_salary": 19406000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.4
+  },
+  {
+    "team": "Duop Reath",
+    "total_salary": 2048780,
+    "avg_salary": 2048780.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.0
+  },
+  {
+    "team": "Dwight Powell",
+    "total_salary": 4000000,
+    "avg_salary": 4000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Dyson Daniels",
+    "total_salary": 6059520,
+    "avg_salary": 6059520.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.1
+  },
+  {
+    "team": "EJ Liddell",
+    "total_salary": 1285475,
+    "avg_salary": 1285475.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.3
+  },
+  {
+    "team": "Elfrid Payton",
+    "total_salary": 1099236,
+    "avg_salary": 1099236.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.1
+  },
+  {
+    "team": "Emanuel Miller",
+    "total_salary": 344234,
+    "avg_salary": 344234.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Eric Bledsoe",
+    "total_salary": 1300000,
+    "avg_salary": 1300000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.3
+  },
+  {
+    "team": "Eric Gordon",
+    "total_salary": 3303771,
+    "avg_salary": 3303771.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.3
+  },
+  {
+    "team": "Ethan Thompson",
+    "total_salary": 212331,
+    "avg_salary": 212331.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Evan Mobley",
+    "total_salary": 11227657,
+    "avg_salary": 11227657.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.2
+  },
+  {
+    "team": "Franz Wagner",
+    "total_salary": 7007092,
+    "avg_salary": 7007092.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.0
+  },
+  {
+    "team": "Fred VanVleet",
+    "total_salary": 42846615,
+    "avg_salary": 42846615.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 42.8
+  },
+  {
+    "team": "Gabe Vincent",
+    "total_salary": 11000000,
+    "avg_salary": 11000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.0
+  },
+  {
+    "team": "Garrison Mathews",
+    "total_salary": 2230253,
+    "avg_salary": 2230253.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Gary Harris",
+    "total_salary": 7500000,
+    "avg_salary": 7500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.5
+  },
+  {
+    "team": "Gary Payton II",
+    "total_salary": 9130000,
+    "avg_salary": 9130000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.1
+  },
+  {
+    "team": "Gary Trent Jr",
+    "total_salary": 2613120,
+    "avg_salary": 2613120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Georges Niang",
+    "total_salary": 8500000,
+    "avg_salary": 8500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.5
+  },
+  {
+    "team": "Goga Bitadze",
+    "total_salary": 9057971,
+    "avg_salary": 9057971.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.1
+  },
+  {
+    "team": "Gradey Dick",
+    "total_salary": 4763543,
+    "avg_salary": 4763543.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.8
+  },
+  {
+    "team": "Grant Williams",
+    "total_salary": 13025250,
+    "avg_salary": 13025250.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.0
+  },
+  {
+    "team": "Grayson Allen",
+    "total_salary": 15625000,
+    "avg_salary": 15625000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 15.6
+  },
+  {
+    "team": "Harrison Barnes",
+    "total_salary": 18000000,
+    "avg_salary": 18000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 18.0
+  },
+  {
+    "team": "Haywood Highsmith",
+    "total_salary": 5200000,
+    "avg_salary": 5200000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.2
+  },
+  {
+    "team": "Immanuel Quickley",
+    "total_salary": 32500000,
+    "avg_salary": 32500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 32.5
+  },
+  {
+    "team": "Isaac Jones",
+    "total_salary": 641962,
+    "avg_salary": 641962.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Isaac Okoro",
+    "total_salary": 10185186,
+    "avg_salary": 10185186.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.2
+  },
+  {
+    "team": "Isaiah Collier",
+    "total_salary": 2512680,
+    "avg_salary": 2512680.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Isaiah Jackson",
+    "total_salary": 4435380,
+    "avg_salary": 4435380.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.4
+  },
+  {
+    "team": "Isaiah Joe",
+    "total_salary": 12991650,
+    "avg_salary": 12991650.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.0
+  },
+  {
+    "team": "Isaiah Stevens",
+    "total_salary": 350668,
+    "avg_salary": 350668.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Isaiah Stewart",
+    "total_salary": 15000000,
+    "avg_salary": 15000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 15.0
+  },
+  {
+    "team": "Isaiah Wong",
+    "total_salary": 427879,
+    "avg_salary": 427879.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Ivica Zubac",
+    "total_salary": 11743210,
+    "avg_salary": 11743210.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.7
+  },
+  {
+    "team": "JD Davison",
+    "total_salary": 571779,
+    "avg_salary": 571779.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Ja'Kobe Walter",
+    "total_salary": 3465000,
+    "avg_salary": 3465000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.5
+  },
+  {
+    "team": "JaVale McGee",
+    "total_salary": 2208856,
+    "avg_salary": 2208856.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Jabari Smith",
+    "total_salary": 9770880,
+    "avg_salary": 9770880.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.8
+  },
+  {
+    "team": "Jackson Rowe",
+    "total_salary": 244502,
+    "avg_salary": 244502.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Jacob Toppin",
+    "total_salary": 710480,
+    "avg_salary": 710480.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.7
+  },
+  {
+    "team": "Jaden Ivey",
+    "total_salary": 7977240,
+    "avg_salary": 7977240.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.0
+  },
+  {
+    "team": "Jaden McDaniels",
+    "total_salary": 23017242,
+    "avg_salary": 23017242.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.0
+  },
+  {
+    "team": "Jaden Springer",
+    "total_salary": 4777088,
+    "avg_salary": 4777088.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.8
+  },
+  {
+    "team": "Jae Crowder",
+    "total_salary": 2620232,
+    "avg_salary": 2620232.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Jae'Sean Tate",
+    "total_salary": 7565217,
+    "avg_salary": 7565217.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.6
+  },
+  {
+    "team": "Jahlil Okafor",
+    "total_salary": 150179,
+    "avg_salary": 150179.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Jahmir Young",
+    "total_salary": 173725,
+    "avg_salary": 173725.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Jaime Jaquez",
+    "total_salary": 3685800,
+    "avg_salary": 3685800.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.7
+  },
+  {
+    "team": "Jake LaRavia",
+    "total_salary": 3352680,
+    "avg_salary": 3352680.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.4
+  },
+  {
+    "team": "Jakob Poeltl",
+    "total_salary": 19500000,
+    "avg_salary": 19500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.5
+  },
+  {
+    "team": "Jalen Brunson",
+    "total_salary": 24960001,
+    "avg_salary": 24960001.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 25.0
+  },
+  {
+    "team": "Jalen Duren",
+    "total_salary": 4536840,
+    "avg_salary": 4536840.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.5
+  },
+  {
+    "team": "Jalen Green",
+    "total_salary": 12483048,
+    "avg_salary": 12483048.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.5
+  },
+  {
+    "team": "Jalen Hood-Schifino",
+    "total_salary": 4021384,
+    "avg_salary": 4021384.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Jalen Johnson",
+    "total_salary": 4510905,
+    "avg_salary": 4510905.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.5
+  },
+  {
+    "team": "Jalen McDaniels",
+    "total_salary": 4881191,
+    "avg_salary": 4881191.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.9
+  },
+  {
+    "team": "Jalen Smith",
+    "total_salary": 8571429,
+    "avg_salary": 8571429.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.6
+  },
+  {
+    "team": "Jalen Suggs",
+    "total_salary": 9188385,
+    "avg_salary": 9188385.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.2
+  },
+  {
+    "team": "Jalen Williams",
+    "total_salary": 4775760,
+    "avg_salary": 4775760.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.8
+  },
+  {
+    "team": "Jamal Murray",
+    "total_salary": 36016200,
+    "avg_salary": 36016200.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 36.0
+  },
+  {
+    "team": "Jamaree Bouyea",
+    "total_salary": 135120,
+    "avg_salary": 135120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "James Harden",
+    "total_salary": 33653846,
+    "avg_salary": 33653846.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 33.7
+  },
+  {
+    "team": "Jamison Battle",
+    "total_salary": 1350668,
+    "avg_salary": 1350668.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.4
+  },
+  {
+    "team": "Jarace Walker",
+    "total_salary": 6362433,
+    "avg_salary": 6362433.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.4
+  },
+  {
+    "team": "Jared Butler",
+    "total_salary": 1115697,
+    "avg_salary": 1115697.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.1
+  },
+  {
+    "team": "Jared McCain",
+    "total_salary": 4020360,
+    "avg_salary": 4020360.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Jared Rhoden",
+    "total_salary": 386995,
+    "avg_salary": 386995.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Jaren Jackson Jr",
+    "total_salary": 25257798,
+    "avg_salary": 25257798.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 25.3
+  },
+  {
+    "team": "Jarred Vanderbilt",
+    "total_salary": 10714286,
+    "avg_salary": 10714286.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.7
+  },
+  {
+    "team": "Javante McCoy",
+    "total_salary": 32596,
+    "avg_salary": 32596.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.0
+  },
+  {
+    "team": "Javon Freeman-Liberty",
+    "total_salary": 100000,
+    "avg_salary": 100000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Jaxson Hayes",
+    "total_salary": 2463946,
+    "avg_salary": 2463946.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Jay Huff",
+    "total_salary": 2088033,
+    "avg_salary": 2088033.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.1
+  },
+  {
+    "team": "Jaylen Brown",
+    "total_salary": 49205800,
+    "avg_salary": 49205800.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 49.2
+  },
+  {
+    "team": "Jaylen Clark",
+    "total_salary": 907334,
+    "avg_salary": 907334.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Jaylen Martin",
+    "total_salary": 384594,
+    "avg_salary": 384594.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Jaylen Nowell",
+    "total_salary": 473929,
+    "avg_salary": 473929.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.5
+  },
+  {
+    "team": "Jaylen Sims",
+    "total_salary": 73153,
+    "avg_salary": 73153.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Jaylin Galloway",
+    "total_salary": 77500,
+    "avg_salary": 77500.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Jaylon Tyson",
+    "total_salary": 3326160,
+    "avg_salary": 3326160.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.3
+  },
+  {
+    "team": "Jayson Tatum",
+    "total_salary": 34848340,
+    "avg_salary": 34848340.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 34.8
+  },
+  {
+    "team": "Jeenathan Williams",
+    "total_salary": 940543,
+    "avg_salary": 940543.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Jerami Grant",
+    "total_salary": 29793104,
+    "avg_salary": 29793104.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 29.8
+  },
+  {
+    "team": "Jeremy Sochan",
+    "total_salary": 5570040,
+    "avg_salary": 5570040.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.6
+  },
+  {
+    "team": "Jett Howard",
+    "total_salary": 5278165,
+    "avg_salary": 5278165.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.3
+  },
+  {
+    "team": "Jevon Carter",
+    "total_salary": 6500000,
+    "avg_salary": 6500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.5
+  },
+  {
+    "team": "Jimmy Butler",
+    "total_salary": 48798677,
+    "avg_salary": 48798677.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 48.8
+  },
+  {
+    "team": "Jock Landale",
+    "total_salary": 8000000,
+    "avg_salary": 8000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.0
+  },
+  {
+    "team": "John Collins",
+    "total_salary": 26580000,
+    "avg_salary": 26580000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 26.6
+  },
+  {
+    "team": "John Konchar",
+    "total_salary": 6165000,
+    "avg_salary": 6165000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.2
+  },
+  {
+    "team": "Johnny Davis",
+    "total_salary": 5291160,
+    "avg_salary": 5291160.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.3
+  },
+  {
+    "team": "Johnny Furphy",
+    "total_salary": 1850842,
+    "avg_salary": 1850842.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.9
+  },
+  {
+    "team": "Johnny Juzang",
+    "total_salary": 3087519,
+    "avg_salary": 3087519.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Jonas Valanciunas",
+    "total_salary": 9900000,
+    "avg_salary": 9900000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.9
+  },
+  {
+    "team": "Jonathan Isaac",
+    "total_salary": 27600000,
+    "avg_salary": 27600000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 27.6
+  },
+  {
+    "team": "Jonathan Kuminga",
+    "total_salary": 7636307,
+    "avg_salary": 7636307.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.6
+  },
+  {
+    "team": "Jordan Clarkson",
+    "total_salary": 14092577,
+    "avg_salary": 14092577.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 14.1
+  },
+  {
+    "team": "Jordan Goodwin",
+    "total_salary": 364102,
+    "avg_salary": 364102.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Jordan Hawkins",
+    "total_salary": 4525706,
+    "avg_salary": 4525706.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.5
+  },
+  {
+    "team": "Jordan Miller",
+    "total_salary": 1471445,
+    "avg_salary": 1471445.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.5
+  },
+  {
+    "team": "Jordan Poole",
+    "total_salary": 29651786,
+    "avg_salary": 29651786.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 29.7
+  },
+  {
+    "team": "Jose Alvarado",
+    "total_salary": 1988598,
+    "avg_salary": 1988598.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.0
+  },
+  {
+    "team": "Josh Giddey",
+    "total_salary": 8352367,
+    "avg_salary": 8352367.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.4
+  },
+  {
+    "team": "Josh Green",
+    "total_salary": 12654321,
+    "avg_salary": 12654321.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.7
+  },
+  {
+    "team": "Josh Hart",
+    "total_salary": 18144000,
+    "avg_salary": 18144000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 18.1
+  },
+  {
+    "team": "Josh Okogie",
+    "total_salary": 8250000,
+    "avg_salary": 8250000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.2
+  },
+  {
+    "team": "Josh Primo",
+    "total_salary": 1000000,
+    "avg_salary": 1000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Josh Richardson",
+    "total_salary": 3051153,
+    "avg_salary": 3051153.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Jrue Holiday",
+    "total_salary": 30000000,
+    "avg_salary": 30000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 30.0
+  },
+  {
+    "team": "Julian Champagnie",
+    "total_salary": 3000000,
+    "avg_salary": 3000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Julian Phillips",
+    "total_salary": 1891857,
+    "avg_salary": 1891857.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.9
+  },
+  {
+    "team": "Julian Strawther",
+    "total_salary": 2552596,
+    "avg_salary": 2552596.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Julius Randle",
+    "total_salary": 31695840,
+    "avg_salary": 31695840.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 31.7
+  },
+  {
+    "team": "Justin Champagnie",
+    "total_salary": 2224662,
+    "avg_salary": 2224662.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Justin Edwards",
+    "total_salary": 782721,
+    "avg_salary": 782721.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.8
+  },
+  {
+    "team": "Jusuf Nurkic",
+    "total_salary": 18125000,
+    "avg_salary": 18125000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 18.1
+  },
+  {
+    "team": "Juwan Morgan",
+    "total_salary": 576230,
+    "avg_salary": 576230.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "KJ Martin",
+    "total_salary": 7975000,
+    "avg_salary": 7975000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.0
+  },
+  {
+    "team": "KJ Simpson",
+    "total_salary": 578577,
+    "avg_salary": 578577.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Kai Jones",
+    "total_salary": 713697,
+    "avg_salary": 713697.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.7
+  },
+  {
+    "team": "Karlo Matkovic",
+    "total_salary": 1407153,
+    "avg_salary": 1407153.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.4
+  },
+  {
+    "team": "Keegan Murray",
+    "total_salary": 8809560,
+    "avg_salary": 8809560.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.8
+  },
+  {
+    "team": "Keion Brooks",
+    "total_salary": 305628,
+    "avg_salary": 305628.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Keita Bates-Diop",
+    "total_salary": 2654644,
+    "avg_salary": 2654644.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.7
+  },
+  {
+    "team": "Kel'el Ware",
+    "total_salary": 4231800,
+    "avg_salary": 4231800.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.2
+  },
+  {
+    "team": "Keldon Johnson",
+    "total_salary": 19000000,
+    "avg_salary": 19000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.0
+  },
+  {
+    "team": "Kelly Olynyk",
+    "total_salary": 12804878,
+    "avg_salary": 12804878.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.8
+  },
+  {
+    "team": "Kelly Oubre",
+    "total_salary": 7983000,
+    "avg_salary": 7983000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.0
+  },
+  {
+    "team": "Kendall Brown",
+    "total_salary": 154423,
+    "avg_salary": 154423.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Kenrich Williams",
+    "total_salary": 6669000,
+    "avg_salary": 6669000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.7
+  },
+  {
+    "team": "Kentavious Caldwell-Pope",
+    "total_salary": 22757000,
+    "avg_salary": 22757000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 22.8
+  },
+  {
+    "team": "Keshad Johnson",
+    "total_salary": 937214,
+    "avg_salary": 937214.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Kevin Durant",
+    "total_salary": 51179020,
+    "avg_salary": 51179020.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 51.2
+  },
+  {
+    "team": "Kevin Huerter",
+    "total_salary": 16830357,
+    "avg_salary": 16830357.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 16.8
+  },
+  {
+    "team": "Kevin Knox",
+    "total_salary": 660790,
+    "avg_salary": 660790.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.7
+  },
+  {
+    "team": "Kevin Love",
+    "total_salary": 3850000,
+    "avg_salary": 3850000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.8
+  },
+  {
+    "team": "Kevin Porter",
+    "total_salary": 3237691,
+    "avg_salary": 3237691.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.2
+  },
+  {
+    "team": "Kevon Harris",
+    "total_salary": 119972,
+    "avg_salary": 119972.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Keyonte George",
+    "total_salary": 4084265,
+    "avg_salary": 4084265.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.1
+  },
+  {
+    "team": "Khris Middleton",
+    "total_salary": 31000000,
+    "avg_salary": 31000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 31.0
+  },
+  {
+    "team": "Killian Hayes",
+    "total_salary": 128603,
+    "avg_salary": 128603.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Klay Thompson",
+    "total_salary": 15873016,
+    "avg_salary": 15873016.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 15.9
+  },
+  {
+    "team": "Kobe Brown",
+    "total_salary": 2534024,
+    "avg_salary": 2534024.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Kobe Bufkin",
+    "total_salary": 4298956,
+    "avg_salary": 4298956.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.3
+  },
+  {
+    "team": "Kris Murray",
+    "total_salary": 2990040,
+    "avg_salary": 2990040.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Kristaps Porzingis",
+    "total_salary": 29268293,
+    "avg_salary": 29268293.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 29.3
+  },
+  {
+    "team": "Kyle Kuzma",
+    "total_salary": 23856060,
+    "avg_salary": 23856060.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.9
+  },
+  {
+    "team": "Kylor Kelley",
+    "total_salary": 324090,
+    "avg_salary": 324090.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Kyrie Irving",
+    "total_salary": 40000000,
+    "avg_salary": 40000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 40.0
+  },
+  {
+    "team": "Kyshawn George",
+    "total_salary": 2825520,
+    "avg_salary": 2825520.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "LaMelo Ball",
+    "total_salary": 35147000,
+    "avg_salary": 35147000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 35.1
+  },
+  {
+    "team": "Lamar Stevens",
+    "total_salary": 668735,
+    "avg_salary": 668735.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.7
+  },
+  {
+    "team": "Landry Shamet",
+    "total_salary": 1682008,
+    "avg_salary": 1682008.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.7
+  },
+  {
+    "team": "Larry Nance Jr",
+    "total_salary": 11205000,
+    "avg_salary": 11205000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.2
+  },
+  {
+    "team": "Lauri Markkanen",
+    "total_salary": 42176400,
+    "avg_salary": 42176400.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 42.2
+  },
+  {
+    "team": "LeBron James",
+    "total_salary": 48728845,
+    "avg_salary": 48728845.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 48.7
+  },
+  {
+    "team": "Lester Quinones",
+    "total_salary": 424409,
+    "avg_salary": 424409.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Lindy Waters III",
+    "total_salary": 2196970,
+    "avg_salary": 2196970.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Lonnie Walker",
+    "total_salary": 780932,
+    "avg_salary": 780932.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.8
+  },
+  {
+    "team": "Lonzo Ball",
+    "total_salary": 21395348,
+    "avg_salary": 21395348.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 21.4
+  },
+  {
+    "team": "Luke Kennard",
+    "total_salary": 9250000,
+    "avg_salary": 9250000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.2
+  },
+  {
+    "team": "Luke Kornet",
+    "total_salary": 2800834,
+    "avg_salary": 2800834.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "Malaki Branham",
+    "total_salary": 3217920,
+    "avg_salary": 3217920.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.2
+  },
+  {
+    "team": "Malcolm Brogdon",
+    "total_salary": 22500000,
+    "avg_salary": 22500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 22.5
+  },
+  {
+    "team": "Malcolm Hill",
+    "total_salary": 75000,
+    "avg_salary": 75000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Malevy Leons",
+    "total_salary": 126356,
+    "avg_salary": 126356.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Malik Beasley",
+    "total_salary": 6000000,
+    "avg_salary": 6000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.0
+  },
+  {
+    "team": "Malik Fitts",
+    "total_salary": 555217,
+    "avg_salary": 555217.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Malik Monk",
+    "total_salary": 17405203,
+    "avg_salary": 17405203.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 17.4
+  },
+  {
+    "team": "Mamadi Diakite",
+    "total_salary": 464050,
+    "avg_salary": 464050.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.5
+  },
+  {
+    "team": "MarJon Beauchamp",
+    "total_salary": 2865623,
+    "avg_salary": 2865623.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.9
+  },
+  {
+    "team": "Marcus Garrett",
+    "total_salary": 107027,
+    "avg_salary": 107027.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Marcus Sasser",
+    "total_salary": 2755229,
+    "avg_salary": 2755229.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "Marcus Smart",
+    "total_salary": 20210285,
+    "avg_salary": 20210285.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 20.2
+  },
+  {
+    "team": "Mark Williams",
+    "total_salary": 4094280,
+    "avg_salary": 4094280.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.1
+  },
+  {
+    "team": "Markelle Fultz",
+    "total_salary": 981902,
+    "avg_salary": 981902.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Matas Buzelis",
+    "total_salary": 5195520,
+    "avg_salary": 5195520.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.2
+  },
+  {
+    "team": "Matisse Thybulle",
+    "total_salary": 11025000,
+    "avg_salary": 11025000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.0
+  },
+  {
+    "team": "Matt Ryan",
+    "total_salary": 978541,
+    "avg_salary": 978541.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Max Christie",
+    "total_salary": 7142857,
+    "avg_salary": 7142857.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.1
+  },
+  {
+    "team": "Max Strus",
+    "total_salary": 15212068,
+    "avg_salary": 15212068.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 15.2
+  },
+  {
+    "team": "Michael Porter",
+    "total_salary": 35859950,
+    "avg_salary": 35859950.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 35.9
+  },
+  {
+    "team": "Mikal Bridges",
+    "total_salary": 23300000,
+    "avg_salary": 23300000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 23.3
+  },
+  {
+    "team": "Mike Conley",
+    "total_salary": 9975962,
+    "avg_salary": 9975962.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.0
+  },
+  {
+    "team": "Miles Bridges",
+    "total_salary": 27173913,
+    "avg_salary": 27173913.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 27.2
+  },
+  {
+    "team": "Miles McBride",
+    "total_salary": 4710144,
+    "avg_salary": 4710144.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.7
+  },
+  {
+    "team": "Miles Norris",
+    "total_salary": 131903,
+    "avg_salary": 131903.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Mitchell Robinson",
+    "total_salary": 14318182,
+    "avg_salary": 14318182.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 14.3
+  },
+  {
+    "team": "Mo Bamba",
+    "total_salary": 2763299,
+    "avg_salary": 2763299.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.8
+  },
+  {
+    "team": "Moses Brown",
+    "total_salary": 446051,
+    "avg_salary": 446051.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Moses Moody",
+    "total_salary": 5803269,
+    "avg_salary": 5803269.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.8
+  },
+  {
+    "team": "Moussa Diabate",
+    "total_salary": 1314865,
+    "avg_salary": 1314865.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.3
+  },
+  {
+    "team": "Myles Turner",
+    "total_salary": 19928500,
+    "avg_salary": 19928500.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.9
+  },
+  {
+    "team": "Nae'qwan Tomlin",
+    "total_salary": 204840,
+    "avg_salary": 204840.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Nassir Little",
+    "total_salary": 3107143,
+    "avg_salary": 3107143.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.1
+  },
+  {
+    "team": "Naz Reid",
+    "total_salary": 13986432,
+    "avg_salary": 13986432.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 14.0
+  },
+  {
+    "team": "Nick Smith",
+    "total_salary": 2587108,
+    "avg_salary": 2587108.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Nickeil Alexander-Walker",
+    "total_salary": 4312500,
+    "avg_salary": 4312500.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.3
+  },
+  {
+    "team": "Nicolas Batum",
+    "total_salary": 4668000,
+    "avg_salary": 4668000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.7
+  },
+  {
+    "team": "Nicolas Claxton",
+    "total_salary": 27556817,
+    "avg_salary": 27556817.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 27.6
+  },
+  {
+    "team": "Nik Stauskas",
+    "total_salary": 702311,
+    "avg_salary": 702311.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.7
+  },
+  {
+    "team": "Nikola Jokic",
+    "total_salary": 51415938,
+    "avg_salary": 51415938.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 51.4
+  },
+  {
+    "team": "Nikola Jovic",
+    "total_salary": 2464200,
+    "avg_salary": 2464200.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Nikola Topic",
+    "total_salary": 4935960,
+    "avg_salary": 4935960.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.9
+  },
+  {
+    "team": "Nikola Vucevic",
+    "total_salary": 20000000,
+    "avg_salary": 20000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 20.0
+  },
+  {
+    "team": "Noah Clowney",
+    "total_salary": 3244080,
+    "avg_salary": 3244080.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.2
+  },
+  {
+    "team": "Norman Powell",
+    "total_salary": 19241379,
+    "avg_salary": 19241379.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 19.2
+  },
+  {
+    "team": "OG Anunoby",
+    "total_salary": 36637932,
+    "avg_salary": 36637932.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 36.6
+  },
+  {
+    "team": "Obi Toppin",
+    "total_salary": 12975000,
+    "avg_salary": 12975000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 13.0
+  },
+  {
+    "team": "Ochai Agbaji",
+    "total_salary": 4310280,
+    "avg_salary": 4310280.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.3
+  },
+  {
+    "team": "Olivier-Maxence Prosper",
+    "total_salary": 2870406,
+    "avg_salary": 2870406.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.9
+  },
+  {
+    "team": "Onyeka Okongwu",
+    "total_salary": 14000000,
+    "avg_salary": 14000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 14.0
+  },
+  {
+    "team": "Orlando Robinson",
+    "total_salary": 1764727,
+    "avg_salary": 1764727.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.8
+  },
+  {
+    "team": "Oshae Brissett",
+    "total_salary": 139391,
+    "avg_salary": 139391.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Oso Ighodaro",
+    "total_salary": 1862265,
+    "avg_salary": 1862265.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.9
+  },
+  {
+    "team": "Ousmane Dieng",
+    "total_salary": 5027040,
+    "avg_salary": 5027040.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.0
+  },
+  {
+    "team": "PJ Dozier",
+    "total_salary": 1051255,
+    "avg_salary": 1051255.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.1
+  },
+  {
+    "team": "PJ Tucker",
+    "total_salary": 12165577,
+    "avg_salary": 12165577.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.2
+  },
+  {
+    "team": "PJ Washington",
+    "total_salary": 15500000,
+    "avg_salary": 15500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 15.5
+  },
+  {
+    "team": "Pacome Dadiet",
+    "total_salary": 1808080,
+    "avg_salary": 1808080.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.8
+  },
+  {
+    "team": "Paolo Banchero",
+    "total_salary": 12160800,
+    "avg_salary": 12160800.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.2
+  },
+  {
+    "team": "Pat Connaughton",
+    "total_salary": 9423869,
+    "avg_salary": 9423869.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.4
+  },
+  {
+    "team": "Pat Spencer",
+    "total_salary": 869906,
+    "avg_salary": 869906.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Patrick Baldwin",
+    "total_salary": 2590394,
+    "avg_salary": 2590394.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Paul Reed",
+    "total_salary": 4015938,
+    "avg_salary": 4015938.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Payton Pritchard",
+    "total_salary": 6696429,
+    "avg_salary": 6696429.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.7
+  },
+  {
+    "team": "Pete Nance",
+    "total_salary": 539893,
+    "avg_salary": 539893.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.5
+  },
+  {
+    "team": "Peyton Watson",
+    "total_salary": 2413560,
+    "avg_salary": 2413560.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.4
+  },
+  {
+    "team": "Quentin Grimes",
+    "total_salary": 4296682,
+    "avg_salary": 4296682.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.3
+  },
+  {
+    "team": "Quinten Post",
+    "total_salary": 789588,
+    "avg_salary": 789588.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.8
+  },
+  {
+    "team": "RJ Barrett",
+    "total_salary": 25794643,
+    "avg_salary": 25794643.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 25.8
+  },
+  {
+    "team": "RayJ Dennis",
+    "total_salary": 324931,
+    "avg_salary": 324931.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Reed Sheppard",
+    "total_salary": 10098960,
+    "avg_salary": 10098960.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.1
+  },
+  {
+    "team": "Richaun Holmes",
+    "total_salary": 12648321,
+    "avg_salary": 12648321.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.6
+  },
+  {
+    "team": "Ricky Rubio",
+    "total_salary": 424672,
+    "avg_salary": 424672.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  },
+  {
+    "team": "Rob Dillingham",
+    "total_salary": 6262920,
+    "avg_salary": 6262920.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.3
+  },
+  {
+    "team": "Robert Williams",
+    "total_salary": 12428571,
+    "avg_salary": 12428571.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.4
+  },
+  {
+    "team": "Ron Harper Jr",
+    "total_salary": 315280,
+    "avg_salary": 315280.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Ron Holland",
+    "total_salary": 8245320,
+    "avg_salary": 8245320.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.2
+  },
+  {
+    "team": "Royce O'Neale",
+    "total_salary": 9375000,
+    "avg_salary": 9375000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.4
+  },
+  {
+    "team": "Rudy Gobert",
+    "total_salary": 43827586,
+    "avg_salary": 43827586.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 43.8
+  },
+  {
+    "team": "Rui Hachimura",
+    "total_salary": 17000000,
+    "avg_salary": 17000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 17.0
+  },
+  {
+    "team": "Russell Westbrook",
+    "total_salary": 5631296,
+    "avg_salary": 5631296.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.6
+  },
+  {
+    "team": "Ryan Dunn",
+    "total_salary": 2530800,
+    "avg_salary": 2530800.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Ryan Rollins",
+    "total_salary": 1549888,
+    "avg_salary": 1549888.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.5
+  },
+  {
+    "team": "Saddiq Bey",
+    "total_salary": 6440678,
+    "avg_salary": 6440678.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.4
+  },
+  {
+    "team": "Sam Hauser",
+    "total_salary": 2092344,
+    "avg_salary": 2092344.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.1
+  },
+  {
+    "team": "Sam Merrill",
+    "total_salary": 2164993,
+    "avg_salary": 2164993.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Santiago Aldama",
+    "total_salary": 3960531,
+    "avg_salary": 3960531.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.0
+  },
+  {
+    "team": "Scoot Henderson",
+    "total_salary": 10259449,
+    "avg_salary": 10259449.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.3
+  },
+  {
+    "team": "Scottie Barnes",
+    "total_salary": 10130980,
+    "avg_salary": 10130980.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 10.1
+  },
+  {
+    "team": "Scotty Pippen Jr",
+    "total_salary": 2087519,
+    "avg_salary": 2087519.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.1
+  },
+  {
+    "team": "Seth Lundy",
+    "total_salary": 328148,
+    "avg_salary": 328148.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Shaedon Sharpe",
+    "total_salary": 6614160,
+    "avg_salary": 6614160.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.6
+  },
+  {
+    "team": "Shake Milton",
+    "total_salary": 2875000,
+    "avg_salary": 2875000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.9
+  },
+  {
+    "team": "Sidy Cissoko",
+    "total_salary": 2100971,
+    "avg_salary": 2100971.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.1
+  },
+  {
+    "team": "Simone Fontecchio",
+    "total_salary": 7692308,
+    "avg_salary": 7692308.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.7
+  },
+  {
+    "team": "Stephen Curry",
+    "total_salary": 55761217,
+    "avg_salary": 55761217.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 55.8
+  },
+  {
+    "team": "Stephon Castle",
+    "total_salary": 9105120,
+    "avg_salary": 9105120.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.1
+  },
+  {
+    "team": "Steven Adams",
+    "total_salary": 12600000,
+    "avg_salary": 12600000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.6
+  },
+  {
+    "team": "Sviatoslav Mykhailiuk",
+    "total_salary": 3500000,
+    "avg_salary": 3500000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.5
+  },
+  {
+    "team": "TJ McConnell",
+    "total_salary": 9300000,
+    "avg_salary": 9300000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.3
+  },
+  {
+    "team": "Taran Armstrong",
+    "total_salary": 157640,
+    "avg_salary": 157640.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.2
+  },
+  {
+    "team": "Tari Eason",
+    "total_salary": 3695160,
+    "avg_salary": 3695160.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.7
+  },
+  {
+    "team": "Taurean Prince",
+    "total_salary": 2988550,
+    "avg_salary": 2988550.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Taylor Hendricks",
+    "total_salary": 5848366,
+    "avg_salary": 5848366.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.8
+  },
+  {
+    "team": "Terance Mann",
+    "total_salary": 11423077,
+    "avg_salary": 11423077.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 11.4
+  },
+  {
+    "team": "Terence Davis",
+    "total_salary": 64301,
+    "avg_salary": 64301.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Terrence Shannon Jr.",
+    "total_salary": 2546640,
+    "avg_salary": 2546640.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.5
+  },
+  {
+    "team": "Terry Rozier",
+    "total_salary": 24924126,
+    "avg_salary": 24924126.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 24.9
+  },
+  {
+    "team": "Terry Taylor",
+    "total_salary": 124288,
+    "avg_salary": 124288.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Tidjane Salaun",
+    "total_salary": 7488720,
+    "avg_salary": 7488720.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.5
+  },
+  {
+    "team": "Tim Hardaway Jr",
+    "total_salary": 16193183,
+    "avg_salary": 16193183.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 16.2
+  },
+  {
+    "team": "Tobias Harris",
+    "total_salary": 25365854,
+    "avg_salary": 25365854.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 25.4
+  },
+  {
+    "team": "Tony Bradley",
+    "total_salary": 635312,
+    "avg_salary": 635312.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.6
+  },
+  {
+    "team": "Torrey Craig",
+    "total_salary": 3891631,
+    "avg_salary": 3891631.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.9
+  },
+  {
+    "team": "Tosan Evbuomwan",
+    "total_salary": 331365,
+    "avg_salary": 331365.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.3
+  },
+  {
+    "team": "Trae Young",
+    "total_salary": 43031940,
+    "avg_salary": 43031940.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 43.0
+  },
+  {
+    "team": "Tre Jones",
+    "total_salary": 9104167,
+    "avg_salary": 9104167.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 9.1
+  },
+  {
+    "team": "Tre Mann",
+    "total_salary": 4908373,
+    "avg_salary": 4908373.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 4.9
+  },
+  {
+    "team": "Trendon Watford",
+    "total_salary": 2726603,
+    "avg_salary": 2726603.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.7
+  },
+  {
+    "team": "Trey Jemison",
+    "total_salary": 864902,
+    "avg_salary": 864902.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.9
+  },
+  {
+    "team": "Trey Murphy",
+    "total_salary": 5159854,
+    "avg_salary": 5159854.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.2
+  },
+  {
+    "team": "Tristan da Silva",
+    "total_salary": 3628440,
+    "avg_salary": 3628440.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.6
+  },
+  {
+    "team": "Ty Jerome",
+    "total_salary": 2560975,
+    "avg_salary": 2560975.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.6
+  },
+  {
+    "team": "Tyler Herro",
+    "total_salary": 29000000,
+    "avg_salary": 29000000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 29.0
+  },
+  {
+    "team": "Tyrese Martin",
+    "total_salary": 959732,
+    "avg_salary": 959732.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 1.0
+  },
+  {
+    "team": "Vasilije Micic",
+    "total_salary": 7723000,
+    "avg_salary": 7723000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 7.7
+  },
+  {
+    "team": "Victor Wembanyama",
+    "total_salary": 12768664,
+    "avg_salary": 12768664.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.8
+  },
+  {
+    "team": "Vince Williams Jr",
+    "total_salary": 2120693,
+    "avg_salary": 2120693.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.1
+  },
+  {
+    "team": "Vit Krejci",
+    "total_salary": 2162606,
+    "avg_salary": 2162606.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Walker Kessler",
+    "total_salary": 2965920,
+    "avg_salary": 2965920.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.0
+  },
+  {
+    "team": "Wendell Carter",
+    "total_salary": 11950000,
+    "avg_salary": 11950000.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.0
+  },
+  {
+    "team": "Wendell Moore",
+    "total_salary": 2723634,
+    "avg_salary": 2723634.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.7
+  },
+  {
+    "team": "Xavier Tillman",
+    "total_salary": 2237691,
+    "avg_salary": 2237691.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 2.2
+  },
+  {
+    "team": "Yuri Collins",
+    "total_salary": 66503,
+    "avg_salary": 66503.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.1
+  },
+  {
+    "team": "Yves Missi",
+    "total_salary": 3193200,
+    "avg_salary": 3193200.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 3.2
+  },
+  {
+    "team": "Zaccharie Risacher",
+    "total_salary": 12569040,
+    "avg_salary": 12569040.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 12.6
+  },
+  {
+    "team": "Zach Collins",
+    "total_salary": 16741200,
+    "avg_salary": 16741200.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 16.7
+  },
+  {
+    "team": "Zach Edey",
+    "total_salary": 5756880,
+    "avg_salary": 5756880.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 5.8
+  },
+  {
+    "team": "Zach LaVine",
+    "total_salary": 44531940,
+    "avg_salary": 44531940.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 44.5
+  },
+  {
+    "team": "Zeke Nnaji",
+    "total_salary": 8888889,
+    "avg_salary": 8888889.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 8.9
+  },
+  {
+    "team": "Ziaire Williams",
+    "total_salary": 6133005,
+    "avg_salary": 6133005.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 6.1
+  },
+  {
+    "team": "Zyon Pullin",
+    "total_salary": 379911,
+    "avg_salary": 379911.0,
+    "salary_count": 1,
+    "player_count": 1,
+    "salary_millions": 0.4
+  }
+]
