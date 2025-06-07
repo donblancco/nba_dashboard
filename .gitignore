@@ -138,6 +138,7 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
+nba_data/
 *.csv
 *.xlsx
 *.xls
