@@ -32,6 +32,8 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # 依存関係のインストール
 pip install -r requirements.txt
+
+
 ```
 
 ## 使い方
@@ -39,6 +41,10 @@ pip install -r requirements.txt
 ### ローカルでの実行
 
 ```bash
+# 最初にデータを収集（必須）
+python scraper/nba_data_scraping.py
+python scraper/nba_salary_scraper.py
+
 # Streamlitアプリの起動
 streamlit run main.py
 
@@ -52,7 +58,7 @@ streamlit run app.py
 
 1. **ページ選択**: 左側のサイドバーから分析したいモジュールを選択
 2. **データの確認**: 各ページで表示されるデータテーブルや可視化を確認
-3. **インタラクティブ操作**: 
+3. **インタラクティブ操作**:
    - グラフはマウスオーバーで詳細情報表示
    - データテーブルはソート可能
    - チーム比較では複数チームを選択可能
@@ -116,8 +122,18 @@ aws apprunner create-service --cli-input-yaml file://apprunner.yaml
 ## トラブルシューティング
 
 ### データが表示されない場合
+- 最初にスクレイパーを実行してデータを収集してください：
+  ```bash
+  python scraper/nba_data_scraping.py
+  python scraper/nba_salary_scraper.py
+  ```
 - `nba_data/`ディレクトリにJSONファイルが存在することを確認
 - サンプルデータモードで動作している可能性があります
+
+### スクレイパーが動作しない場合
+- 必要なライブラリがインストールされているか確認：
+- インターネット接続を確認
+- Basketball ReferenceやHoopsHypeのサイトがアクセス可能か確認
 
 ### ポートエラーの場合
 ```bash
@@ -150,10 +166,3 @@ nba_dashboard/
 - データ処理は`data/loader.py`を修正
 - UIスタイルは`config.py`のCSS設定を調整
 
-## ライセンス
-
-[ライセンス情報を追加]
-
-## 貢献
-
-[貢献ガイドラインを追加]

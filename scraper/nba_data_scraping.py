@@ -45,7 +45,8 @@ def scrape_basketball_reference_table(url, output_filename):
             return None
         
         # pandasでテーブルを読み取り
-        df = pd.read_html(str(table))[0]
+        from io import StringIO
+        df = pd.read_html(StringIO(str(table)))[0]
         
         # マルチレベルカラムの処理
         if isinstance(df.columns, pd.MultiIndex):
