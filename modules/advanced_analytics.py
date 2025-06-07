@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from config import PLOTLY_AVAILABLE, safe_plotly_chart
+from utils.helpers import filter_multi_team_records
 
 def create_page(data):
     """アドバンスト分析ページ"""
@@ -40,6 +41,7 @@ def get_team_data(df, data):
     team_df = pd.DataFrame()
     
     # 既存のチームデータをチェック
+    df = filter_multi_team_records(df)
     if 'Team' in df.columns:
         if 'Player' in df.columns:
             team_df = df[df['Player'].isna() & df['Team'].notna()]

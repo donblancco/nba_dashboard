@@ -4,6 +4,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from config import PLOTLY_AVAILABLE, safe_plotly_chart
+from utils.helpers import filter_multi_team_records
 
 def create_page(data):
     """チーム比較ページ"""
@@ -13,7 +14,7 @@ def create_page(data):
         st.error("Per game データが見つかりません")
         return
     
-    df = data['per_game']
+    df = filter_multi_team_records(data['per_game'])
     
     if 'Team' not in df.columns:
         st.error("チーム情報が見つかりません")

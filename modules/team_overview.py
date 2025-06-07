@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from utils.helpers import filter_multi_team_records
 
 def create_page(data):
     """チーム概要ページ"""
@@ -9,7 +10,7 @@ def create_page(data):
         st.error("Per game データが見つかりません")
         return
     
-    df = data['per_game']
+    df = filter_multi_team_records(data['per_game'])
     
     # デバッグ情報（必要に応じて表示）
     if st.checkbox("🔍 デバッグ情報を表示"):

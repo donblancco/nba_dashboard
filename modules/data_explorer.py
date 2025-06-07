@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from config import PLOTLY_AVAILABLE, safe_plotly_chart
+from utils.helpers import filter_multi_team_records
 
 def create_page(data):
     """データエクスプローラーページ"""
@@ -41,7 +42,7 @@ def get_available_datasets(data):
 
 def explore_dataset(df, dataset_name):
     """データセットの探索"""
-    df = df.copy()
+    df = filter_multi_team_records(df.copy())
     
     # データセット概要
     display_dataset_overview(df, dataset_name)

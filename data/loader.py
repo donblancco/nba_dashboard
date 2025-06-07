@@ -3,6 +3,7 @@ import pandas as pd
 import os
 from config import JSON_AVAILABLE
 from .sample_data import create_sample_data
+from utils.helpers import filter_multi_team_records
 
 if JSON_AVAILABLE:
     import json
@@ -36,6 +37,8 @@ def load_nba_data(data_dir='nba_data'):
                 
                 if not df.empty:
                     df = convert_numeric_columns(df)
+                    # 2TM、3TM等の複数チーム移籍レコードを除外
+                    df = filter_multi_team_records(df)
                     data[key] = df
                     files_loaded += 1
                 else:

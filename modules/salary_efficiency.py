@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from config import PLOTLY_AVAILABLE, safe_plotly_chart, format_currency
+from utils.helpers import filter_multi_team_records
 
 def create_page(data):
     """サラリー効率分析ページ（ゲーム数フィルタリング対応版）"""
@@ -13,7 +14,7 @@ def create_page(data):
         return
     
     # プレイヤーデータのみを抽出
-    df = data['advanced'].copy()
+    df = filter_multi_team_records(data['advanced'].copy())
     player_df = df[df['Player'].notna()] if 'Player' in df.columns else pd.DataFrame()
     
     if player_df.empty:

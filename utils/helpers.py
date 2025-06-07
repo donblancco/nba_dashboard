@@ -38,3 +38,14 @@ def format_large_numbers(number):
 def get_percentile_rank(series, value):
     """パーセンタイル順位の計算"""
     return (series < value).mean() * 100
+
+def filter_multi_team_records(df, team_columns=['Team', 'Tm']):
+    """2TM、3TM等の複数チーム移籍レコードを除外"""
+    df_filtered = df.copy()
+    
+    for col in team_columns:
+        if col in df_filtered.columns:
+            # 2TM, 3TM, 4TM等のパターンを除外
+            df_filtered = df_filtered[~df_filtered[col].astype(str).str.match(r'^\d+TM$', na=False)]
+    
+    return df_filtered
