@@ -10,6 +10,17 @@ def create_page(data):
     """チーム比較ページ"""
     st.header("⚖️ Team Comparison")
     
+    st.info("""
+    **⚖️ チーム比較ページについて**
+    
+    複数のチームを選択して詳細な比較分析を行えます：
+    - 最大8チームまでの同時比較
+    - レーダーチャートによる多角的な能力比較
+    - バーチャートによる項目別の詳細比較
+    - 攻撃・守備・効率性など様々な観点での分析
+    """)
+    st.divider()
+    
     if 'per_game' not in data or data['per_game'].empty:
         st.error("Per game データが見つかりません")
         return

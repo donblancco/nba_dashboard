@@ -7,6 +7,17 @@ def create_page(data):
     """得点分析ページ"""
     st.header("📊 Scoring Analysis")
     
+    st.info("""
+    **📊 得点分析ページについて**
+    
+    NBA選手の得点力とシュート効率を詳しく分析します：
+    - **得点ランキング**: 1試合平均得点上位15選手の表示
+    - **シュート効率分析**: FG%（フィールドゴール成功率）と3P%（3ポイント成功率）の相関
+    - 各選手の所属チーム情報も併せて表示
+    - トレード選手は最新の統計データ（TOT）を優先表示
+    """)
+    st.divider()
+    
     if 'per_game' not in data or data['per_game'].empty:
         st.error("Per game データが見つかりません")
         return

@@ -9,6 +9,17 @@ def create_page(data):
     """アドバンスト分析ページ"""
     st.header("📈 Advanced Analytics")
     
+    st.info("""
+    **📈 アドバンスト分析について**
+    
+    従来の基本統計を超えた高度な分析指標を提供します：
+    - **効率性指標**: PER（Player Efficiency Rating）、TS%（True Shooting%）等
+    - **プラスマイナス**: BPM（Box Plus/Minus）、VORP（Value Over Replacement Player）
+    - **使用率**: USG%（Usage Rate）、チーム内での役割分析
+    - **チーム貢献度**: 勝利への寄与度を多角的に評価
+    """)
+    st.divider()
+    
     if 'advanced' not in data or data['advanced'].empty:
         st.warning("アドバンスト統計データが見つかりません")
         return

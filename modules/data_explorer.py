@@ -9,6 +9,17 @@ def create_page(data):
     """データエクスプローラーページ"""
     st.header("🔍 Data Explorer")
     
+    st.info("""
+    **🔍 データエクスプローラーについて**
+    
+    豊富なNBAデータを自由に探索・分析できるツールです：
+    - **データセット選択**: per_game, advanced, play_by_play等から選択
+    - **インタラクティブフィルタ**: 数値範囲、カテゴリー、チーム等で絞り込み
+    - **カスタム可視化**: X軸・Y軸を自由に設定してグラフ作成
+    - **詳細検索**: 特定の条件を満たす選手やチームを発見
+    """)
+    st.divider()
+    
     # 利用可能なデータセットを取得
     available_datasets = get_available_datasets(data)
     

@@ -185,6 +185,52 @@ class NBAPlayerSalaryScraper:
             print(f"❌ ESPN error: {e}")
             return None
     
+    def process_traded_players(self, df: pd.DataFrame) -> pd.DataFrame:
+        """移籍選手の処理：各選手について最新チームのみを保持"""
+        if df.empty or 'player_name' not in df.columns or 'team' not in df.columns:
+            return df
+        
+        print("🔄 Processing traded players...")
+        
+        # 各選手について重複をチェック
+        processed_players = []
+        player_groups = df.groupby('player_name')
+        
+        for player_name, group in player_groups:
+            if len(group) == 1:
+                # 重複なし：そのまま追加
+                processed_players.append(group.iloc[0])
+            else:
+                # 重複あり：最新チームを決定
+                print(f"   Found traded player: {player_name} ({len(group)} teams)")
+                
+                # TOTチームがある場合、TOT以外の最新チーム（最高サラリー）を選択
+                non_tot_teams = group[group['team'] != 'TOT']
+                if not non_tot_teams.empty:
+                    # TOT以外で最高サラリーのレコード（最新契約）
+                    latest_record = non_tot_teams.loc[non_tot_teams['current_salary'].idxmax()]
+                    print(f"     → Selected current team: {latest_record['team']} (${latest_record['current_salary']:,})")
+                else:
+                    # TOTのみの場合はそれを使用
+                    latest_record = group.iloc[0]
+                    print(f"     → Only TOT available, keeping: {latest_record['team']}")
+                
+                processed_players.append(latest_record)
+        
+        # 新しいDataFrameを作成
+        result_df = pd.DataFrame(processed_players)
+        
+        original_count = len(df)
+        final_count = len(result_df)
+        removed_count = original_count - final_count
+        
+        print(f"✅ Traded player processing complete:")
+        print(f"   Original records: {original_count}")
+        print(f"   Final records: {final_count}")
+        print(f"   Removed duplicates: {removed_count}")
+        
+        return result_df
+
     def get_all_salaries(self) -> Optional[pd.DataFrame]:
         """複数のソースからサラリーデータを取得"""
         print("=== NBA Player Salary Collection Started ===\n")
@@ -214,10 +260,10 @@ class NBAPlayerSalaryScraper:
         
         # データフレームを結合
         if all_dataframes:
-            final_df = pd.concat(all_dataframes, ignore_index=True)
+            combined_df = pd.concat(all_dataframes, ignore_index=True)
             
-            # 重複除去（プレイヤー名で）
-            final_df = final_df.drop_duplicates(subset=['player_name'], keep='first')
+            # 移籍選手の処理（最新チームのみ保持）
+            final_df = self.process_traded_players(combined_df)
             
             # ソート（サラリー順）
             final_df = final_df.sort_values('current_salary', ascending=False)

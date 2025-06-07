@@ -8,6 +8,17 @@ def create_page(data):
     """相関分析ページ"""
     st.header("🔗 Correlation Analysis")
     
+    st.info("""
+    **🔗 相関分析について**
+    
+    選手の各種統計項目間の関係性を数値的に分析します：
+    - **相関係数**: -1から1の範囲で統計項目間の関係の強さを測定
+    - **ヒートマップ**: 視覚的に相関関係を把握
+    - **強い相関の発見**: |r| >= 0.7の特に注目すべき関係性を自動抽出
+    - **例**: 「得点とシュート試投数」「身長とリバウンド」などの関係性を発見
+    """)
+    st.divider()
+    
     if 'per_game' not in data or data['per_game'].empty:
         st.error("Per game データが見つかりません")
         return
