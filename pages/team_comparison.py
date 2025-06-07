@@ -115,4 +115,4 @@ def create_comparison_bar_chart(selected_df, selected_stats):
         title="選択チームの統計比較"
     )
     fig.update_layout(height=400)
-    safe
+    safe_plotly_chart(fig)
